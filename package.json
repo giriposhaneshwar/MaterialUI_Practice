@@ -8,7 +8,8 @@
     "@types/react": "^16.8.2",
     "@types/react-dom": "^16.8.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-router-dom": "6"
   },
   "scripts": {
     "start": "react-scripts-ts start",
