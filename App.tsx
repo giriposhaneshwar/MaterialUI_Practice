@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Hello from './Hello';
+import { Button } from './components/Button';
 import { Routes, Route, Link } from 'react-router-dom';
 
 interface AppProps {}
@@ -19,10 +19,7 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <p>Start editing to see some magic happen :)</p>
-
-        <Routes>
-          <Route path="/" element={<Hello name={this.state.name} />} />
-        </Routes>
+        <Button text={this.state.name} />
       </div>
     );
   }
