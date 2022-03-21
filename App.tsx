@@ -1,4 +1,4 @@
-import React, { useState, createRef } from 'react';
+import React, { useState, createRef, useEffect } from 'react';
 import Btn from './components/Button';
 import { Routes, Route, Link } from 'react-router-dom';
 
@@ -14,9 +14,14 @@ const App = (props: any) => {
   const [name, setName] = useState('React');
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    container.current.innerHTML = c++;
+  }, []);
+
   const handleBtnClick = () => {
     container.current.innerHTML = c++;
   };
+
   return (
     <div>
       <p ref={container}>Start editing to see some magic happen :)</p>
